@@ -6,18 +6,12 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { authService,firebaseInstance   } from "fbase";
-import {
-  createUserWithEmailAndPassword,
-  GithubAuthProvider,
-  GoogleAuthProvider,
-  signInWithEmailAndPassword,
-  signInWithPopup,
-  } from "@firebase/auth";
-  import AuthForm from "components/AuthForm";
+
+import AuthForm from "components/AuthForm";
+
 
 const Auth = () => {
     
-
     const onSocialClick = async (event) => {
       const {
         target: { name },
